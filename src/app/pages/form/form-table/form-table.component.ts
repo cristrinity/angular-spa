@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CompanyService } from 'src/app/services/company.service';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
@@ -14,8 +15,9 @@ companies;
     // fetch('http://5d5e6efc2441510014fc81e8.mockapi.io/api/company').then( data => data.json())
     // .then(data => {
     //   this.companies = data;
-    //   //repr(this.companies);
+    //
     // })
+
    this.companyservice.listado().then( data => {
      this.companies = data;
      console.log(this.companies);

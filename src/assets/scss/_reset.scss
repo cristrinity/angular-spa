@@ -23,8 +23,9 @@ time, mark, audio, video {
 *, *::after, *::before {
 	box-sizing: border-box;
 }
-button{
+a,button, a:active{
   outline:none;
+  text-decoration: none;
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {

@@ -1,11 +1,37 @@
 <div class="container">
-  <div *ngFor="let company of companies">
-    <p>{{company.name}}</p>
-    <p>{{company.address}}</p>
-    <p>{{company.country}}</p>
-    <p>{{company.createdAd}}</p>
-    <p>{{company.phone}}</p>
-    <p>{{company.size}}</p>
+
+  <h1 class="featured">Mis negocios</h1>
+
+  <div class="card" *ngFor="let company of companies">
+    <div class="table-company">
+      <h2>{{company.name}}</h2>
+      <div class="table-company__section">
+        <div class="table-company__label">
+          <h4>Descripción</h4>
+          <span>{{company.description}}</span>
+        </div>
+        <div class="table-company__label">
+          <h4>Dirección</h4>
+          <span>{{company.address}}</span>
+        </div>
+        <div class="table-company__label">
+          <h4>País</h4>
+          <span>{{company.country}}</span>
+        </div>
+        <div class="table-company__label">
+          <h4>Fecha</h4>
+          <span>{{company.createdAd}}</span>
+        </div>
+        <div class="table-company__label">
+          <h4>Teléfono</h4>
+          <span>{{company.phone}}</span>
+        </div>
+        <div class="table-company__label">
+          <h4>Descripción</h4>
+          <span>{{company.size}}</span>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

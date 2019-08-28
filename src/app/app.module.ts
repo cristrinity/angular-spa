@@ -8,6 +8,7 @@ import { FormTableComponent } from './pages/form/form-table/form-table.component
 import { FormEditComponent } from './pages/form/form-edit/form-edit.component';
 import { FormCreateComponent } from './pages/form/form-create/form-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
