@@ -1,3 +1,15 @@
-<p>
-  menu-component works!
-</p>
+<div class="nav">
+  <div class="logo">
+    <img src="../../../assets/img/logo.png" alt="">
+  </div>
+  <nav class="menu">
+    <ul>
+      <a [routerLink]="[ 'my-companies' ]">
+        <li class="menu__item">{{menu[0]}}</li>
+      </a>
+      <a [routerLink]="[ 'create-company' ]">
+        <li class="menu__item">{{menu[1]}}</li>
+      </a>
+    </ul>
+  </nav>
+</div>

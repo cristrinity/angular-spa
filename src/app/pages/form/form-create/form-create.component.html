@@ -1,0 +1,49 @@
+<div class="container">
+  <h1>Registrar nuevo negocio</h1>
+  <p class="block">
+    Para registrar un negocio rellene correctamente la información de los siguientes campos
+  </p>
+  <form action="" class="form">
+    <div class="form__input">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form__input">
+      <label for="createdAt">Fecha de creación</label>
+      <input type="date" id="createdAt" required>
+    </div>
+    <div class="form__input">
+      <label for="size-company">Tamaño de empresa</label>
+      <select class="form__select" id="size-company" required>
+        <option>Selecciona uno...</option>
+        <option value="{{empresa[0].value}}">{{empresa[0].key}}</option>
+        <option value="{{empresa[1].value}}">{{empresa[1].key}}</option>
+        <option value="{{empresa[2].value}}">{{empresa[2].key}}</option>
+      </select>
+    </div>
+    <div class="form__input">
+        <label for="address">Dirección</label>
+        <input type="text" id="address" required>
+      </div>
+      <div class="form__input">
+          <label for="country">País</label>
+          <select class="form__select" id="country" required>
+            <option>...</option>
+            <option value="{{pais[0].value}}">{{pais[0].key}}</option>
+            <option value="{{pais[1].value}}">{{pais[1].key}}</option>
+            <option value="{{pais[2].value}}">{{pais[2].key}}</option>
+            <option value="{{pais[3].value}}">{{pais[3].key}}</option>
+          </select>
+        </div>
+        <div class="form__input">
+            <label for="phone">Teléfono</label>
+            <input type="number" id="phone" required>
+        </div>
+        <div class="form__input">
+            <label for="description">Descripción</label>
+            <textarea cols="80" rows="10" for="description"></textarea>
+        </div>
+      </form>
+      <button type="reset" class="btn">Borrar</button>
+      <button type="submit" class="btn">Enviar</button>
+</div>

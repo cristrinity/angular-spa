@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MenuComponentComponent } from './shared/menu-component/menu-component.component';
 import { FormTableComponent } from './pages/form/form-table/form-table.component';
 import { FormEditComponent } from './pages/form/form-edit/form-edit.component';
+import { FormCreateComponent } from './pages/form/form-create/form-create.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormEditComponent } from './pages/form/form-edit/form-edit.component';
     HeaderComponent,
     MenuComponentComponent,
     FormTableComponent,
-    FormEditComponent
+    FormEditComponent,
+    FormCreateComponent
   ],
   imports: [
     BrowserModule,
