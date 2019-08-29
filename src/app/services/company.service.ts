@@ -14,4 +14,8 @@ export class CompanyService {
     return this.httpClient.get(`${environment.apiURL}`).toPromise();
   }
 
+  async addCompany(company){
+    return this.httpClient.post(`${environment.apiURL}`, company).toPromise();
+  }
+
 }
